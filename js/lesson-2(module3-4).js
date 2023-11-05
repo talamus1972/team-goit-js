@@ -62,3 +62,40 @@
 // }
 
 // console.log(numbers(someArr));
+
+
+//TODO: № 6 ==============================================================
+// Напиши скрипт, який для об'єкта user,
+// Послідовно:
+// 1. додати поле mood зі значенням 'happy'
+// 2. замінити hobby на 'skydiving'
+// 3. замінити значення premium на false
+// 4. виводити зміст об'єкта user у форматі
+// ключ:значення використовуючи Object.keys() і for...of
+
+// const user = {
+//   name: "John",
+//   age: 20,
+//   hobby: "tenis",
+//   premium: true,
+
+//   greet(){
+// console.log(`Hello my name is ${this.name}`)
+// }
+// };
+
+// user.mood = "happy";
+
+// console.log("🚀 ~ user:", user)
+
+// user.hobby = "skydiving";
+
+// console.log("🚀 ~ user:", user)
+
+// user.premium = false; 
+// console.log("🚀 ~ user:", user)
+
+// for (const key of Object.keys(user)) {
+//     console.log(`${key}: ${user[key]}`)
+// }
+// user.greet();
