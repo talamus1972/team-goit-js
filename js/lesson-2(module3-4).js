@@ -44,7 +44,21 @@
 //     if (typeof a !== "number" || typeof b !== "number") {
 //         return 'a бо b не число!Запиши числові дані!'
 //     };
-//     // if (a < b) { return a } return b; 
-//     return a < b ? a : b; 
+//     // if (a < b) { return a } return b;
+//     return a < b ? a : b;
 // }
 // console.log(min(1, 2));
+
+// напиши функцію яка сумуватиме сусідні числа і пушити в новий масив
+// const someArr = [22, 11, 34, 5, 12, 13, 14, 15];
+
+// function numbers(array) {
+//     const sum = [];
+//     for (let i = 0; i < array.length - 1; i +=1) {
+//         sum.push(array[i] + array[i + 1]);
+        
+//     }
+//     return sum;
+// }
+
+// console.log(numbers(someArr));
