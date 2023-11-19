@@ -18,7 +18,7 @@
 
 // const greet = (name) => `Hello ${name}`
 // console.log(letMeSeeYourName(greet));
-    
+
 
 //TODO № 2 з колбеком ==============================================
 //Напишіть дві функції
@@ -53,7 +53,7 @@
 // const product = {
 //   price: 5000,
 //   showPrice() {
-//     console.log(this.price);
+//     console.log(this.price);    
 // },
 // };
 // product.showPrice();
@@ -75,21 +75,56 @@
 // // callAction(item.getQuatity.bind(item));
 
 // console.log(item.getQuatity.bind(item));
+//TODO якщо що на замикання ✅ ==============================================
 
-// =========================================================
 // Напишіть функцію makeShef(shefName), яка повертає функцію
 // makeDish(dish), яка памятає імя щефа піл час її виклику
 // Функція  makeDish має логіровать рядок "<імя шефа> is cooking <dish>"
-
 // function makeShef(shefName) {
-//     return function makeDish(dish){
-//         console.log(`${shefName} is cooking ${dish}`);
-//     };
+//     return function makeDish(dish) {
+//         console.log(`${shefName} is cooking ${ dish }`);
+//     }
 // }
-
 // const shef = makeShef("Ivan");
-// const shef1 = makeShef("Vovan")
-// shef1("eggs")
-// shef("fish");
+// shef("Fish");
+// const shef1 = makeShef("Vova");
+// shef1("eggs");
 
-// ========================================================
+//TODO: № 6 на перебирання ✅ ==============================================
+//Зібрати в allTopics масив всіх предметів всіх курсів
+//Виконати фільтрацію, залишивши в uniqueTopics тільки унікальні елементи
+
+// const courses = [
+//     {
+//         name: "Basic HTML+CSS",
+//         topics: ["VSCode", "HTML", "CSS", "GitHub", "GitHub Desctop"],
+//     },
+//     {
+//         name: "Intermediate HTML+CSS",
+//         topics: ["VSCode", "HTML", "CSS", "GitHub", "Git", "Terminal"],
+//     },
+//     {
+//         name: "Basic JavaScript",
+//         topics: [
+//             "VSCode", "Type system", "Loops", "Function", "Git", "Conditions", "Classes", "GitHub", "DOM",
+//         ],
+//     },
+//     {
+//         name: "Intermediate JavaScript",
+//         topics: [
+//             "VSCode",
+//             "NPM",
+//             "Bundlers",
+//             "Transpiling",
+//             "Git",
+//             "Promises",
+//             "AJAX",
+//             "GitHub",
+//         ],
+//     },
+// ];
+
+// const allTopics = courses.flatMap((course) => course.topics)
+// console.log(allTopics)
+// const sorting = allTopics.filter((item, index, array) => array.indexOf(item)===index);
+// console.log(sorting);
