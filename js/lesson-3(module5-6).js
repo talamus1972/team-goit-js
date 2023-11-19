@@ -45,3 +45,33 @@
 // console.log(makeProduct("fish",2500,showProduct));
 // console.log(makeProduct("rabit",2800,showProduct));
 // console.log(makeProduct("water",500,showProduct));
+
+
+
+// //TODO: № 3 на this ✅ ==============================================
+// // Виправте помилки, щоб код працював
+// const product = {
+//   price: 5000,
+//   showPrice() {
+//     console.log(this.price);    
+// },
+// };
+// product.showPrice();
+
+
+//TODO: № 4 на this ✅==============================================
+// //Виправте помилки, щоб код працював
+
+// function callAction(action) {
+//   action();
+// }
+
+// const item = {
+//   getQuatity() {
+//     console.log(this.quantity);
+//   },
+//   quantity: 5,
+// };
+// // callAction(item.getQuatity.bind(item));
+
+// console.log(item.getQuatity.bind(item));
