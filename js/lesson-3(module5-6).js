@@ -53,7 +53,7 @@
 // const product = {
 //   price: 5000,
 //   showPrice() {
-//     console.log(this.price);    
+//     console.log(this.price);
 // },
 // };
 // product.showPrice();
@@ -75,3 +75,21 @@
 // // callAction(item.getQuatity.bind(item));
 
 // console.log(item.getQuatity.bind(item));
+
+// =========================================================
+// Напишіть функцію makeShef(shefName), яка повертає функцію
+// makeDish(dish), яка памятає імя щефа піл час її виклику
+// Функція  makeDish має логіровать рядок "<імя шефа> is cooking <dish>"
+
+// function makeShef(shefName) {
+//     return function makeDish(dish){
+//         console.log(`${shefName} is cooking ${dish}`);
+//     };
+// }
+
+// const shef = makeShef("Ivan");
+// const shef1 = makeShef("Vovan")
+// shef1("eggs")
+// shef("fish");
+
+// ========================================================
