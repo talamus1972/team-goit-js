@@ -26,9 +26,17 @@
  
 // })
 
+//TODO: № 3 ==============================================
+// При кліку на кнопку текст параграфів змінюється на їх порядковий номер
 
+// const textEls = document.querySelectorAll("p");  // зробили псевдо масив елементів
+// const btnEl = document.querySelector("button");
 
-
+// btnEl.addEventListener('click', changeText);
+// function changeText(){
+// textEls.forEach((p, index) => (p.textContent = index + 1));
+// }
+// console.log(btnEl);
 
 
 
