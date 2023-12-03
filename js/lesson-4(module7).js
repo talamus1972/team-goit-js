@@ -38,7 +38,36 @@
 // }
 // console.log(btnEl);
 
+//TODO: № 4 ==============================================
+// Кнопка "Приховати" ховає текст і замінює назву кнопки на
+// "Розкрити", при повторному натисканні текст знову стає доступним
+// і кнопка набуває початкового вигляду.
 
+// const btnClick = document.querySelector('#passwordButton');
+// const inputPass = document.querySelector('#passwordInput');
 
+// btnClick.addEventListener('click', passHidden);
+// function passHidden() {
+//     const typeInput = inputPass.getAttribute('type');
+//     const toggleTypeInput = typeInput === "password" ? "text" : "password";
+//     inputPass.setAttribute("type", toggleTypeInput);
 
+//     console.log(typeInput);
+
+//    const btnText = btnClick.textContent;
+//    const toggleTextBtn = btnText === "Приховати" ? "Розкрити" : "Приховати";
+//    btnClick.textContent = toggleTextBtn;
+// }
+
+//TODO: № 5 ==============================================
+
+// Кнопка "Зменшити" робить квадрат менше на 10 пікселів, допопка "Збільшити" - більше на 10 пікселів.
+
+// Підказка до 5 задачі:
+//.offsetWidth - знайти значення для збільшення на діві
+//.offsetHeight
+
+//TODO: № 7 ==============================================
+// Натиснувши кнопку "Подвоювати", збільшити значення
+// у кожному елементі списку у 2 рази
 
