@@ -71,3 +71,19 @@
 // Натиснувши кнопку "Подвоювати", збільшити значення
 // у кожному елементі списку у 2 рази
 
+//TODO: № 6 ==============================================
+// Додайде слухач кліку і визначте, коли клік відбувається
+// всередині елемента з id "place" і коли клік припадає поза зоною елемента
+// https://developer.mozilla.org/en-US/docs/Web/API/Node/contains
+
+// const element = document.querySelector("#place");
+// window.addEventListener("click", event => {
+// // console.dir(event.target);
+// const isInEL = element.contains(event.target);
+// // console.log(isInEL);
+// if (isInEL) {
+// console.log("Ви клікнули зелений прямокутник"); 
+// return 
+// }
+// console.log("Ви промахнулись)))"); 
+// })
