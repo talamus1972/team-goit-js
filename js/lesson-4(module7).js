@@ -87,3 +87,67 @@
 // }
 // console.log("Ви промахнулись)))"); 
 // })
+
+// TODO: ЗАДАЧА 1 на LocalStorage =========================================
+
+// Створи перелік справ.
+// Є інпут, який вводиться назва завдання.
+// Після натискання на кнопку "Додати" завдання додається до списку #list.
+// Поруч із кожним завданням знаходиться кнопка "Видалити", щоб можна було
+// Забрати завдання зі списку.
+// Список із завданнями має бути доступним після перезавантаження сторінки.
+
+const taskForm = document.querySelector("#task-form");
+const taskName = document.querySelector('input[name="taskName"]');
+const taskList = document.querySelector("#task-list");
+
+let tasks = JSON.parse(localStorage.getItem("tasks")) || [];
+
+
+taskForm.addEventListener("submit", addTask);
+
+function addTask(event) {
+    event.preventDefault();
+    const task = taskName.value.trim();
+ 
+    if (task !== "") {
+        tasks.push(task);
+        taskName.value = '';
+        renderTask();
+        saveTasks();
+    }
+}
+
+ 
+function deleteTask(event) {
+
+    const taskIndex = event.target.dataset.index;
+    tasks.splice(taskIndex, 1);
+    renderTask();
+    saveTasks();
+
+
+ }
+
+
+function renderTask() {
+    taskList.innerHTML = "";
+    tasks.forEach((task, index) => {
+        const li = document.createElement("li");
+        li.innerText = task;
+        const button = document.createElement("button");
+        button.innerText = "DELETE";
+        button.dataset.index = index;
+        button.addEventListener("click", deleteTask);
+
+        li.appendChild(button);
+        taskList.appendChild(li);
+    })
+}
+function saveTasks() {
+    localStorage.setItem("tasks", JSON.stringify(tasks));
+}
+
+renderTask();
+
+
